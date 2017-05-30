@@ -1,4 +1,4 @@
-<nav class="neopraxis-navbar" id="neopraxisNavbarSite">
+<nav class="{% if section == 'innovation' %} aguaviento-navbar-innovation {% else %} neopraxis-navbar {% endif %}" id="neopraxisNavbarSite">
   <button class="hamburger hamburger--collapse" type="button" id="neopraxis-hamburger-menu">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
@@ -29,13 +29,13 @@
       {% endif %}
         <a href="./memberships.html" class="">Productos</a>
       </li>
-      {% if section == 'offices' %}
+      {% if section == 'innovation' %}
         <li class="aguaviento-font-montserrat-light active">
       {% else %}
         <li class="aguaviento-font-montserrat-light">
       {% endif %}
-        <a href="./innovation.html" class="">Innovación</a>
-      </li>
+          <a href="./innovation.html" class="">Innovación</a>
+        </li>
       {% if section == 'tools' %}
         <li class="aguaviento-font-montserrat-light active">
       {% else %}
