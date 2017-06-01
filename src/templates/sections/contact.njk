@@ -14,16 +14,17 @@
         <img src="img/icons/group-11@3x.png" alt="">
         <h2 class="title aguaviento-font-montserrat-regular">Contacto</h2>
       </div>
-      <form action="">
+      <form id="contact-form" class="contact-form" action="http://integrations.blick.mx/aguaviento/email/" method="post">
         <div class="aguaviento-contact">
           <div class="contact-row-1">
             <div class="contact-full-name">
-              <input class="aguaviento-font-montserrat-regular" type="text" name="full-name" required>
-              <label class="aguaviento-font-montserrat-regular" for="full-name">Nombre completo</label>
+              <input class="aguaviento-font-montserrat-regular" type="text" name="name" required>
+              <label id="contact-form-name" class="label aguaviento-font-montserrat-regular" for="name">Nombre completo</label>
+              <input hidden="true" id="contact-form-name" class="site-input" type="text" name="last_name" placeholder="Nombre">
             </div>
             <div class="contact-email">
               <input class="aguaviento-font-montserrat-regular" type="text" name="email" required>
-              <label class="aguaviento-font-montserrat-regular" for="email">Correo electrónico</label>
+              <label id="contact-form-email" class="label aguaviento-font-montserrat-regular" for="email">Correo electrónico</label>
             </div>
           </div>
           <div class="contact-row-2">
@@ -31,11 +32,12 @@
               <div class="message-title">
                 <label class="aguaviento-font-montserrat-extralight" for="message">Mensaje</label>
               </div>
-              <textarea class="message aguaviento-font-montserrat-extralight" name="message" cols="30" rows="10"onfocus="this.placeholder = ''" onblur="this.placeholder = 'Escribe aquí'"></textarea>
+              <textarea id="contact-form-message" class="message aguaviento-font-montserrat-extralight" name="message" cols="30" rows="10"onfocus="this.placeholder = ''" onblur="this.placeholder = 'Escribe aquí'"></textarea>
             </div>
             <div class="contact-button aguaviento-font-montserrat-extralight">
               <button>Enviar</button>
             </div>
+            <div class="form-message"></div>
           </div>
         </div>
       </form>
