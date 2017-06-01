@@ -26,13 +26,7 @@
     </div>
     {% block js_libs_config %}
     {% endblock %}
-    {% if section == 'contact' %}
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
-    {% endif %}
-    {% if section == 'contact' %}
-      <script type="text/javascript" src="js/contact-map.js"></script>
-    {% endif %}
     
     <script src="js/{{ projectFilesName }}.libs.js"></script>
     {% block js_project_config %}
