@@ -1,6 +1,8 @@
 .aguaviento-container
   padding-top 87px
   position relative
+  #name-error, #email-error
+    font-family 'Montserrat-ExtraLight'
   .aguaviento-content
     width 620px
     margin 0 auto
@@ -16,7 +18,7 @@
         display flex
         flex-direction column
                 
-        label
+        .label
           font-size 17px
           color #0d74b9
           margin-bottom 7px
@@ -38,7 +40,7 @@
           color #0d74b9
           padding 12px 0
           
-        input:focus ~ label, input:valid ~ label
+        input:focus ~ .label, input:valid ~ .label
           font-size 15px
           color #c1c1c1
           top -10px
@@ -47,13 +49,7 @@
         .contact-full-name
           margin-bottom 41px
           margin-top 11px
-          position relative
-          
-          input:focus ~ label, input:valid ~ label
-            font-size 15px
-            color #c1c1c1
-            top -10px
-            font-family 'Montserrat-ExtraLight'        
+          position relative    
         
         .contact-email
           position relative
@@ -86,7 +82,7 @@
             padding 7px 23px
             border 0
             background-color #0d74b9
-            font-size 8px;
+            font-size 9px;
             color #fff
       
   	.aguaviento-location
