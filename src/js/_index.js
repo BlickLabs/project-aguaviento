@@ -15,15 +15,17 @@ document.querySelector("#body").addEventListener( "touchstart",function (e) {
 		document.querySelector('#neopraxis-main-navbar').classList.remove('neopraxis-navbar-style');
 	}
 });
-var servicesOneModal = $('#servicesOneModal');
-var servicesTwoModal = $('#servicesTwoModal');
-var imageClose = $('#imageClose');
-var imageCloseTwo = $('#imageCloseTwo');
-var imageBtnOne = $("#imageBtnOne");
-var imageBtnTwo = $("#imageBtnTwo");
-var body = $('#body');
+var servicesOneModal = document.getElementById('servicesOneModal');
+var servicesTwoModal = document.getElementById('servicesTwoModal');
+var imageClose = document.getElementById('imageClose');
+var imageCloseTwo = document.getElementById('imageCloseTwo');
+var imageBtnOne = document.getElementById('imageBtnOne');
+var imageBtnTwo = document.getElementById('imageBtnTwo');
+var body = document.getElementById('body');
+
 imageBtnOne.onclick = function(e) {
 	e.preventDefault();
+	console.log('aaaa');
 	servicesOneModal.classList.add('modal-open');
 	body.classList.add('modal-open');
 	$('.servicesOne').slick({
@@ -39,6 +41,7 @@ imageClose.onclick = function() {
 	servicesOneModal.classList.remove('modal-open');
 	body.classList.remove('modal-open');
 }
+
 imageBtnTwo.onclick = function(e) {
 	e.preventDefault();
 	servicesTwoModal.classList.add('modal-open');
@@ -52,6 +55,7 @@ imageBtnTwo.onclick = function(e) {
       prevArrow: '<img class="service-prev cursor-pointer" src="./img/icons/group-3-copy-4@3x.png"></img>',
     });
 }
+
 imageCloseTwo.onclick = function() {
 	servicesTwoModal.classList.remove('modal-open');
 	body.classList.remove('modal-open');
