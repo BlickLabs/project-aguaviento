@@ -1,4 +1,4 @@
-.aguaviento-section-title
+.aguaviento-section-title.innovation
   text-align center
   margin 47px auto
   position relative
@@ -12,7 +12,7 @@
     height 44px
     position absolute
     top -10px
-    right 52px
+    right 57px
     z-index -1
     
 .innovation
@@ -21,7 +21,7 @@
     width 100vw
     height 37vw
     margin-top 87px
-    background url("../img/mountain-forest.jpg")
+    background url("../img/pexels-photo.jpg")
     background-attachment fixed
     background-repeat no-repeat 
     background-size cover
@@ -78,3 +78,24 @@
           img
             width 90px
             height 75px
+
+@media only screen and (max-width 600px)
+  .innovation-content
+    width 320px !important
+  
+  .aguaviento-section-title.innovation
+    width 220px
+    img
+      top: 4px;
+      right: -5px;
+  .innovation-content
+    padding-bottom 30px !important
+  .innovation-content-info
+    flex-direction column
+    text-align center
+    .info
+      p
+        width 310px !important
+  .innovation-content-image
+    margin-left 0 !important
+    margin-top 35px
