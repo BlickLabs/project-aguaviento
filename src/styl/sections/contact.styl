@@ -1,0 +1,105 @@
+.aguaviento-container
+  padding-top 87px
+  position relative
+  #name-error, #email-error
+    font-family 'Montserrat-ExtraLight'
+  .aguaviento-content
+    width 620px
+    margin 0 auto
+    .aguaviento-section-title
+      &.contact
+        img
+          right 220px
+    .aguaviento-contact
+      display flex
+      margin 92px 0 77px 0
+      .contact-row-1
+        margin-right 66px
+        display flex
+        flex-direction column
+                
+        .label
+          font-size 17px
+          color #0d74b9
+          margin-bottom 7px
+          pointer-events none
+          position absolute
+          top 10px
+          left 0
+          transition .2s all ease
+          will-change font-size
+          will-change color
+          will-change top
+          
+        input
+          height 48px
+          width 263px
+          border 0
+          border-bottom 1px solid #dbdbdb
+          font-size 18px
+          color #0d74b9
+          padding 12px 0
+          
+        input:focus ~ .label, input:valid ~ .label
+          font-size 15px
+          color #c1c1c1
+          top -10px
+          font-family 'Montserrat-ExtraLight'
+          
+        .contact-full-name
+          margin-bottom 41px
+          margin-top 11px
+          position relative    
+        
+        .contact-email
+          position relative
+                 
+      .contact-row-2
+        .contact-message
+          height 189px
+          .message-title
+            margin-bottom 16px
+            font-size 15px
+            color #c1c1c1
+            letter-spacing .4px
+          .message
+            width 291px
+            height 156px
+            padding 12px 18px
+            border 1px solid #d4d4d4
+            font-size 11px
+            letter-spacing .4px
+            &::placeholder
+              color #c1c1c1
+              letter-spacing .4px
+        .contact-button
+          display flex
+          justify-content flex-end
+          margin-top 10px
+          button
+            width 71px
+            height 23px
+            padding 7px 23px
+            border 0
+            background-color #0d74b9
+            font-size 9px;
+            color #fff
+      
+  	.aguaviento-location
+      margin 45px 0 101px 0
+      .contact-adress
+        color #c1c1c1
+        font-size 15px
+        margin-bottom 50px
+      #contact-map
+        width 619px
+        height 348px
+
+    .section-divider
+      background-color #0d74b9
+      width 100%
+      height 1px
+  .contact-oval
+    position absolute
+    top 80px
+    left 3px
