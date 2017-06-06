@@ -15,13 +15,13 @@ document.querySelector("#body").addEventListener( "touchstart",function (e) {
 		document.querySelector('#neopraxis-main-navbar').classList.remove('neopraxis-navbar-style');
 	}
 });
-var servicesOneModal = document.getElementById('servicesOneModal');
-var servicesTwoModal = document.getElementById('servicesTwoModal');
-var imageClose = document.getElementById('imageClose');
-var imageCloseTwo = document.getElementById('imageCloseTwo');
-var imageBtnOne = document.getElementById("imageBtnOne");
-var imageBtnTwo = document.getElementById("imageBtnTwo");
-var body = document.getElementById('body');
+var servicesOneModal = $('#servicesOneModal');
+var servicesTwoModal = $('#servicesTwoModal');
+var imageClose = $('#imageClose');
+var imageCloseTwo = $('#imageCloseTwo');
+var imageBtnOne = $("#imageBtnOne");
+var imageBtnTwo = $("#imageBtnTwo");
+var body = $('#body');
 imageBtnOne.onclick = function(e) {
 	e.preventDefault();
 	servicesOneModal.classList.add('modal-open');
