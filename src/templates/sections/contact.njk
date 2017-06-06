@@ -1,0 +1,57 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block title %}
+  Contacto
+{% endblock %}
+
+{% block content %}
+  <div class="aguaviento-container">
+    <div class="aguaviento-content">
+      <div class="aguaviento-section-title contact">
+        <img src="img/icons/group-11@3x.png" alt="">
+        <h2 class="title aguaviento-font-montserrat-regular">Contacto</h2>
+      </div>
+      <form id="contact-form" class="contact-form" action="http://integrations.blick.mx/aguaviento/email/" method="post">
+        <div class="aguaviento-contact">
+          <div class="contact-row-1">
+            <div class="contact-full-name">
+              <input class="aguaviento-font-montserrat-regular" type="text" name="name" required>
+              <label id="contact-form-name" class="label aguaviento-font-montserrat-regular" for="name">Nombre completo</label>
+              <input hidden="true" id="contact-form-name" class="site-input" type="text" name="last_name" placeholder="Nombre">
+            </div>
+            <div class="contact-email">
+              <input class="aguaviento-font-montserrat-regular" type="text" name="email" required>
+              <label id="contact-form-email" class="label aguaviento-font-montserrat-regular" for="email">Correo electrónico</label>
+            </div>
+          </div>
+          <div class="contact-row-2">
+            <div class="contact-message">
+              <div class="message-title">
+                <label class="aguaviento-font-montserrat-extralight" for="message">Mensaje</label>
+              </div>
+              <textarea id="contact-form-message" class="message aguaviento-font-montserrat-extralight" name="message" cols="30" rows="10"onfocus="this.placeholder = ''" onblur="this.placeholder = 'Escribe aquí'"></textarea>
+            </div>
+            <div class="contact-button aguaviento-font-montserrat-extralight">
+              <button>Enviar</button>
+            </div>
+            <div class="form-message"></div>
+          </div>
+        </div>
+      </form>
+      <div class="section-divider"></div>
+      <div class="aguaviento-location">
+        <div class="contact-adress aguaviento-font-montserrat-extralight">
+          <p>Carretera las animas, Coyotepec km 3.7</p>
+          <p>Col. La era Teoloyucan, Edo de Mex, C.P. 54770</p>
+        </div>
+        <div id="contact-map">
+          
+        </div>
+      </div>
+    </div>
+    <img class="contact-oval" src="img/oval-3-copy-4.png" alt="">
+  </div>
+{% endblock %}
