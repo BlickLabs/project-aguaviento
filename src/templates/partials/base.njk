@@ -14,10 +14,13 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
     <title>{% if section != 'index' %}{% block title %}{% endblock %} - {% endif %}{{ projectName }}</title>
   </head>
   <body id="body">
-    <div id="page">
+    <div id="page" class="remodal-bg">
       {% include 'partials/navbar.njk' %}
       <main>
         {% block content %}{% endblock %}
@@ -26,20 +29,15 @@
     </div>
     {% block js_libs_config %}
     {% endblock %}
-    {% if section == 'contact' %}
+    
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
-    {% endif %}
-    {% if section == 'contact' %}
-      <script type="text/javascript" src="js/contact-map.js"></script>
-    {% endif %}
     
     <script src="js/{{ projectFilesName }}.libs.js"></script>
     {% block js_project_config %}
     {% endblock %}
     <script src="js/{{ projectFilesName }}.js"></script>
     {% block js_inline %}
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script type="text/javascript">
       $(".products-slider").slick({
