@@ -1,4 +1,4 @@
-<nav class="{% if section == 'innovation' %} aguaviento-navbar-innovation {% else %} neopraxis-navbar {% endif %}" id="neopraxisNavbarSite">
+<nav class="{% if section == 'innovation' %} aguaviento-navbar-innovation {% elif section == 'plant' or 'company' %} aguaviento-navbar-plant {% else %} neopraxis-navbar {% endif %}" id="neopraxisNavbarSite">
   <button class="hamburger hamburger--collapse" type="button" id="neopraxis-hamburger-menu">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
@@ -15,19 +15,19 @@
       {% endif%}
         <a href="./" class="">Inicio</a>
       </li>
-      {% if section == 'services' %}
+      {% if section == 'company' %}
         <li class="aguaviento-font-montserrat-light active">
       {% else %}
         <li class="aguaviento-font-montserrat-light">
       {% endif %}
-        <a href="./services.html" class="">Compañía</a>
+        <a href="./company.html" class="">Compañía</a>
       </li>
-      {% if section == 'memberships' %}
+      {% if section == 'products' %}
         <li class="aguaviento-font-montserrat-light active">
       {% else %}
         <li class="aguaviento-font-montserrat-light">
       {% endif %}
-        <a href="./memberships.html" class="">Productos</a>
+        <a href="./products.html" class="">Productos</a>
       </li>
       {% if section == 'innovation' %}
         <li class="aguaviento-font-montserrat-light active">
@@ -36,14 +36,14 @@
       {% endif %}
           <a href="./innovation.html" class="">Innovación</a>
         </li>
-      {% if section == 'tools' %}
+      {% if section == 'plant' %}
         <li class="aguaviento-font-montserrat-light active">
       {% else %}
         <li class="aguaviento-font-montserrat-light">
       {% endif %}
-        <a href="./tools.html" class="">Instalaciones</a>
+        <a href="./plant.html" class="">Instalaciones</a>
       </li>
-      {% if section == 'blog' %}
+      {% if section == 'contact' %}
         <li class="aguaviento-font-montserrat-light active">
       {% else %}
         <li class="aguaviento-font-montserrat-light">

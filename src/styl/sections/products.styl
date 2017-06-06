@@ -1,0 +1,301 @@
+.aguaviento-section-title
+  &.products
+    margin 68px auto 42px auto
+    img
+      right 200px
+
+.products-carroussel
+  width 100%
+  height 438px
+  position relative
+  .slick-arrow
+    border none
+    background none
+    position absolute
+    top 180px
+    width 30px
+    height 57px
+    background-size cover
+    content none
+  .slick-prev
+    z-index 1
+    background-image url('../img/products-left-arrow.png')
+    left 0
+  .slick-next
+    z-index 1
+    background-image url('../img/products-right-arrow.png')
+    right 0
+  .slick-dots
+    padding 0
+    position relative
+    margin-left auto
+    margin-right auto
+    width 50px
+    top -60px
+    :last-child
+      margin-right 0
+    li
+      list-style-type none
+      display inline-block
+      width 10px
+      height 10px
+      margin-right 10px
+      :hover
+        background #fff
+      
+      button
+        width 10px
+        background #b2e1f7
+        height 10px
+        padding 0
+        border 0
+        border-radius 50%
+        cursor pointer
+    li.slick-active
+      button
+        background #fff
+  .slick-list.draggable
+    height 100%
+    .slick-track
+      height 100%
+      .products-slide-one,
+      .products-slide-two,
+      .products-slide-three
+        width 100%
+        height 100%
+        background url("../img/products-slide-one.png")
+        background-size cover
+        .slider-title
+          position relative
+          img
+            width 212px
+            height 190px
+            position absolute
+            left 12px
+          .slide-title
+            color #fff
+            font-size 17px
+            font-weight normal
+            position absolute
+            top 48px
+            left 55px
+            width 111px
+            letter-spacing .3px
+.products-divider-container
+  width 516px
+  margin 0 auto
+.products-categories
+  margin 85px auto 85px auto
+  width 635px
+  .products-category
+    display inline-block
+    text-align center
+    margin-right 30px
+    img 
+      margin-bottom 35px
+    p
+      display block
+      color #0c6db8
+      font-size 15px
+      margin 0
+      padding 10px 0
+    &.detergents
+      img
+        width 72px
+        height 66px
+    &.softeners
+      img
+        width 72px
+        height 61px
+    &.cleaners
+      img
+        width 72px
+        height 60px
+    &.green-tech
+      img
+        width 72px
+        height 60px
+      p
+        border-bottom 1px solid #0d74b9
+    &.industrial
+      img
+        width 72px
+        height 51px
+  :last-child
+    margin-right 0
+.products-divider
+  height 16px
+  width 100%
+  background #1f7db9
+  margin-bottom 76px
+.products-features
+  .features-sections
+    margin 0 auto
+    width 792px
+    margin-bottom 50px
+    .features-section
+      display inline-block
+      padding 20px 62px
+      background #8dc7df
+      border-radius 4px
+      margin-right 20px
+      cursor pointer
+      p
+        color #fff
+        font-size 23px
+        margin 0
+      &.our-brands
+        padding 20px 50px
+      &.active
+        background #1f7db9
+        cursor default
+    :last-child
+      margin-right 0
+
+.products-features-container
+  width 700px
+  margin 100px auto 150px auto
+  
+  .hidden
+    display none
+
+  .product-line
+    margin-bottom 63px
+    margin-top 50px
+    .product-line-title
+      color #0d74b9
+      font-size 21px
+      text-align center
+      margin-bottom 60px
+      h4
+        margin 0
+    .product-line-products
+      display flex
+      align-items center
+      .carroussel-button
+        border 0
+        border-radius 50%
+        width 27px
+        height 27px
+        &.prev-button
+          background url('../img/icons/group-3-copy-4@3x.png')
+          background-size cover
+          margin-right 20px
+        &.next-button
+          background url('../img/icons/group-3-copy-2@3x.png')
+          background-size cover
+          margin-left 20px
+      .product-line-carroussel
+        display inline-block
+        width 610px
+        .product-line-product
+          width 200px
+          display inline-block
+          .product-image-container
+            width 200px
+            height 200px
+            display flex
+            justify-content center
+            align-items flex-end
+            margin-bottom 17px
+            &.easyiron-justone
+              img
+                width 147px
+                height 178px
+            &.aroma-justone
+              img
+                width 73px
+                height 172px
+            &.woodsandlaminate-justone
+              img
+                width 106px
+                height 181px
+            &.dark-clothes-zaz
+              img
+                width 145px
+                height 159px
+            &.detergent-liquid-zaz
+              img
+                width 102px
+                height 185px
+            &.dishwasher-zaz
+              img
+                width 91px
+                height 166px
+          .product-description
+            text-align center
+            color #585858
+            font-size 13px
+            padding-right 3px
+  .product-line-divider
+    height 1px 
+    margin 0 auto
+    width 585px
+    background #dedede
+
+.product-line-divider
+  height 1px 
+  background #dedede
+
+.maquila
+  .product-line-divider
+    margin-top 138px
+  .brands
+    width 486px
+    margin 75px auto
+    display flex
+    flex-wrap wrap
+    align-items center
+    justify-content center
+    
+    .brand
+      display inline-block
+      /*change margins when you add new brands*/
+      &.golden-hill img
+        margin-right 45px
+        margin-bottom 45px
+        width 112px
+        height 67px
+      &.walmart img
+        margin-right 45px
+        margin-bottom 45px
+        width 152px
+        height 38px
+      &.costco img
+        margin-right 0
+        margin-bottom 45px
+        width 132px
+        height 47px
+      &.sams img
+        margin-right 0
+        margin-bottom 0
+        width 96px
+        height 96px
+.meet-us
+  margin-top 300px
+  .meet-us-title
+    color #0d74b9
+    font-size 21px
+    text-align center
+    margin-bottom 60px
+    h4
+      margin 0
+      font-weight normal
+      letter-spacing .9px
+  .meet-us-button
+    width 137px
+    margin 40px auto
+    button
+      width 137px
+      height 37px
+      background #0d74b9
+      border 0
+      border-radius 4px
+      font-size 10px
+      color #fff
+      letter-spacing 1px
+      cursor pointer
+.products-final-divider
+  height 1px
+  background #e0e0e0
+  margin-bottom 31px
