@@ -1,0 +1,133 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+{% endblock %}
+
+{% block title %}
+  Compañía
+{% endblock %}
+
+{% block content %}
+  <div class="aguaviento-container">
+    <div class="aguaviento-content company">
+      <div class="aguaviento-section-title company">
+        <img src="img/icons/group-11@3x.png" alt="">
+        <h2 class="title aguaviento-font-montserrat-regular">Grupo Aguaviento</h2>
+      </div>
+      <div class="company-divider-container">
+        <div class="section-divider"></div>
+      </div>
+      <div class="company-description aguaviento-font-montserrat-extralight">
+        <p>
+          Con 50 años en el mercado <span class="aguaviento-font-montserrat-regular">Grupo Aguaviento</span> trabaja para atender las necesidades de millones de hogares americanos. 
+        </p>
+      </div>
+      <div class="company-features">
+        <div class="company-feature vision">
+          <div class="company-feature-image">
+            <img src="/img/icons/vision@3x.png" alt="Visión">
+          </div>
+          <div class="company-feature-title aguaviento-font-montserrat-extralight">
+            <a data-remodal-target="vision"><button>VISIÓN</button></a>
+          </div>
+        </div>
+        <div class="company-feature mission">
+          <div class="company-feature-image ">
+            <img src="/img/icons/iconooos-15@3x.png" alt="Misión">
+          </div>
+          <div class="company-feature-title aguaviento-font-montserrat-extralight">
+            <a data-remodal-target="mission"><button>MISIÓN</button></a>
+          </div>
+        </div>
+        <div class="company-feature quality-politics">
+          <div class="company-feature-image">
+            <img src="/img/icons/iconooos-13@3x.png" alt="Política de calidad">
+          </div>
+          <div class="company-feature-title aguaviento-font-montserrat-extralight">
+            <a data-remodal-target="quality-politics"><button>POLÍTICA DE CALIDAD</button></a>
+          </div>
+        </div>
+        <div class="company-feature company-video">
+          <div class="company-feature-image">
+            <img src="/img/icons/iconooos-14@3x.png" alt="Video de la empresa">
+          </div>
+          <div class="company-feature-title aguaviento-font-montserrat-extralight">
+            <a id="company-video" data-remodal-target="company-video" onClick="runVideo()"><button>VIDEO DE LA EMPRESA</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="company-cover"></div>
+    <div class="company-certification">
+      <div class="iso-description">
+        <div class="description">
+          <div class="description-title">
+            <h3 class="aguaviento-font-montserrat-regular">Certificación en proceso <span>ISO 9001</span></h3>
+          </div>
+          <div class="description-divider"></div>
+          <div class="description-content aguaviento-font-montserrat-extralight">
+            <p>
+              Curabitur rutrum blandit odio in maximus. Donec in risus sapien. Proin pulvinar neque id eros malesuada,
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="iso-image">
+        <div class="image-container">
+          <img src="/img/icons/iso-9001@3x.png" alt="ISO 9001">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="remodal" data-remodal-id="vision">
+    <div class="aguaviento-modal">
+      <button data-remodal-action="close" class="modal-close"></button>
+      <div class="modal-title aguaviento-font-montserrat-light">
+        <h3>Visión</h3>
+      </div>
+      <div class="modal-divider"></div>
+      <div class="modal-content aguaviento-font-montserrat-extralight">
+        <p>
+          Ser la empresa líder en desarrollar y fabricar productos de limpieza con un alto desempeño, que satisfagan las necesidades de nuestros clientes, contribuyendo a facilitar la higiene de cada hogar y organización del continente americano.
+        </p>
+      </div>
+    </div>
+</div>
+<div class="remodal" data-remodal-id="mission">
+    <div class="aguaviento-modal">
+      <button data-remodal-action="close" class="modal-close"></button>
+      <div class="modal-title aguaviento-font-montserrat-light">
+        <h3>Misión</h3>
+      </div>
+      <div class="modal-divider"></div>
+      <div class="modal-content aguaviento-font-montserrat-extralight">
+        <p>
+          Somos un equipo de profesionales con la experiencia puesta al servicio de nuestros clientes, queremos ser reconocidos como el negocio con la mayor relación costo -beneficio.
+        </p>
+        <p>
+          Sin miedo a los desafíos, nos empeñamos en crear los mejores productos de limpieza del mercado, en forma responsable, controlada y amigable con el medio ambiente.
+        </p>
+      </div>
+    </div>
+</div>
+<div class="remodal" data-remodal-id="quality-politics">
+    <div class="aguaviento-modal">
+      <button data-remodal-action="close" class="modal-close"></button>
+      <div class="modal-title aguaviento-font-montserrat-light">
+        <h3>Política de calidad</h3>
+      </div>
+      <div class="modal-divider"></div>
+      <div class="modal-content aguaviento-font-montserrat-extralight">
+        <p>
+          En Grupo Aguaviento fabricamos productos de limpieza que satisfacen las expectativas de nuestros clientes y estamos comprometidos al cumplimiento de normas y leyes que nos apliquen, buscando siempre la mejora continua, la protección del medio ambiente y el desarrollo de nuestro personal.
+        </p>
+      </div>
+    </div>
+</div>
+<div class="remodal video" data-remodal-id="company-video">
+    <div class="aguaviento-modal video">
+    <button id="video-close-button" data-remodal-action="close" class="modal-close video" onClick="stopVideo()"></button>
+      <iframe id="aguaviento-video" width="700" height="393.75" src="https://www.youtube.com/embed/8eqGyMWYwHA?controls=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+{% endblock %}
