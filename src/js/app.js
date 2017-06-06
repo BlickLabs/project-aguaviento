@@ -1,4 +1,24 @@
 (function () {
+  $.extend($.validator.messages, {
+    required: "Este campo es obligatorio",
+    remote: "Please fix this field",
+    email: "Ingresa una dirección de correo válida",
+    url: "Ingresa una URL válida",
+    date: "Ingresa una fecha válida",
+    dateISO: "Ingresa una fecha válida (ISO)",
+    number: "Ingresa un número válido",
+    digits: "Solo se permiten números dígitos",
+    creditcard: "Ingresa un número de tarjeta válido",
+    equalTo: "Los valores deben coincidir",
+    accept: "Please enter a value with a valid extension",
+    maxlength: $.validator.format("No ingreses más de {0} caracteres"),
+    minlength: $.validator.format("Ingresa al menos {0} caracteres"),
+    rangelength: $.validator.format("El texto debe tener entre {0} y {1} caracteres"),
+    range: $.validator.format("Ingresa un valor entre {0} y {1}"),
+    max: $.validator.format("Ingresa un valor menor o igual que {0}"),
+    min: $.validator.format("Ingresa un valor mayor o igual que {0}")
+  });
+
   $.validator.setDefaults({
     invalidHandler: function (event, validator) {
       var form = $(this);
@@ -20,7 +40,6 @@
           formMessage.html(message);
         };
 
-      fields.attr('disabled', 'disabled');
       formMessage.html('');
       if (!$(form).find('.button-wrapper .loader').length) {
         $(form).find('.button-wrapper').addClass('disabled');
