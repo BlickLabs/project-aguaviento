@@ -30,8 +30,10 @@
     position relative
     margin-left auto
     margin-right auto
-    width 50px
+    width 65px
     top -60px
+    li.slick-active button::before, li button::before
+      content ''
     :last-child
       margin-right 0
     li
@@ -299,3 +301,57 @@
   height 1px
   background #e0e0e0
   margin-bottom 31px
+
+@media only screen and (max-width 414px)
+  .slider-title
+    img
+      left 0 !important
+    .slide-title
+      left 30px !important
+  .aguaviento-content.products
+    width 300px
+  .aguaviento-section-title.products
+    img
+      right 55px
+  .products-categories
+    width 300px
+    .products-category
+      display block
+      margin-bottom 60px
+      margin-right 0
+      img
+        margin-bottom 20px
+    .green-tech
+      p
+        width 130px
+        margin 0 auto
+  .features-sections
+    width 300px !important
+    :last-child
+      margin-bottom 0
+  .features-section
+    display block !important
+    margin-right 0px !important
+    text-align center
+    margin-bottom 30px
+  .products-features-container
+    width 320px
+    .our-brands
+      .product-line
+        .product-line-title
+          width 320px
+        .product-line-carroussel
+          width 225px
+          .product-line-product .product-image-container
+            width 225px
+    .maquila
+      .brands
+        width 225px
+        :last-child
+          margin-bottom 0
+        .brand
+          margin-bottom 50px
+          img
+            margin 0
+    .meet-us
+      margin-top 200px
