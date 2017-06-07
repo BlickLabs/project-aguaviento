@@ -72,6 +72,9 @@
         prevArrow: '<img class="header-prev cursor-pointer" src="./img/icons/group-3-copy-4@3x.png"></img>',
       });
     </script>
+    {% if section == 'products' or section == 'plant'%}
+      <script src="js/slick.js"></script>
+    {% endif %}
     {% endblock %}
   </body>
 </html>
