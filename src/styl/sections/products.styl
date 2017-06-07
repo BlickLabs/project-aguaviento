@@ -17,6 +17,7 @@
     height 57px
     background-size cover
     content none
+    cursor pointer
   .slick-prev
     z-index 1
     background-image url('../img/products-left-arrow.png')
@@ -151,6 +152,10 @@
       &.active
         background #1f7db9
         cursor default
+        &:hover
+          background #1f7db9
+      &:hover
+        background #86bed6
     :last-child
       margin-right 0
 
@@ -179,6 +184,7 @@
         border-radius 50%
         width 27px
         height 27px
+        cursor pointer
         &.prev-button
           background url('../img/icons/group-3-copy-4@3x.png')
           background-size cover
@@ -297,6 +303,8 @@
       color #fff
       letter-spacing 1px
       cursor pointer
+      &:hover
+        background #0965a3
 .products-final-divider
   height 1px
   background #e0e0e0
@@ -313,6 +321,8 @@
   .aguaviento-section-title.products
     img
       right 55px
+  .products-divider-container
+    width 260px
   .products-categories
     width 300px
     .products-category
