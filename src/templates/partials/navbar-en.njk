@@ -1,0 +1,70 @@
+<nav class="{% if section == 'innovation' %} aguaviento-navbar-innovation neopraxis-navbar{% else %} neopraxis-navbar {% endif %}" id="neopraxisNavbarSite">
+  <button class="hamburger hamburger--collapse" type="button" id="neopraxis-hamburger-menu">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <a class="navbar-brand" href="./">
+    <img src="./img/logo-aguaviento@3x.png" class="fitLogo" id="fit-logo">
+  </a>
+  <ul class="nav navbar-nav navbar-right" id="neopraxis-main-navbar">
+      {% if section == 'index' %}
+        <li class="aguaviento-font-montserrat-light active">
+      {% else %}
+        <li class="aguaviento-font-montserrat-light">
+      {% endif%}
+        <a href="./" class="">Home</a>
+      </li>
+      {% if section == 'company' %}
+        <li class="aguaviento-font-montserrat-light active">
+      {% else %}
+        <li class="aguaviento-font-montserrat-light">
+      {% endif %}
+        <a href="./company.html" class="">Company</a>
+      </li>
+      {% if section == 'products' %}
+        <li class="aguaviento-font-montserrat-light active">
+      {% else %}
+        <li class="aguaviento-font-montserrat-light">
+      {% endif %}
+        <a href="./products.html" class="">Products</a>
+      </li>
+      {% if section == 'innovation' %}
+        <li class="aguaviento-font-montserrat-light active">
+      {% else %}
+        <li class="aguaviento-font-montserrat-light">
+      {% endif %}
+          <a href="./innovation.html" class="">Innovation</a>
+        </li>
+      {% if section == 'plant' %}
+        <li class="aguaviento-font-montserrat-light active">
+      {% else %}
+        <li class="aguaviento-font-montserrat-light">
+      {% endif %}
+        <a href="./plant.html" class="">Instalations</a>
+      </li>
+      {% if section == 'contact' %}
+        <li class="aguaviento-font-montserrat-light active">
+      {% else %}
+        <li class="aguaviento-font-montserrat-light">
+      {% endif %}
+        <a href="./contact.html" class="">Contact</a>
+      </li>
+  </ul>
+    <ul class="nav navbar-nav navbar-right" id="neopraxis-main-navbar-right">
+      <li class="navbar-padding aguaviento-font-montserrat-light right-item-nav">
+        <a href="./index.html" class="language-link">ES</a>
+      </li>
+      <li class="navbar-padding aguaviento-font-montserrat-light right-item-nav">
+        <a href="#" class="language-link">/</a>
+      </li>
+      <li class="navbar-padding aguaviento-font-montserrat-light right-item-nav">
+        <a href="./index-en.html" class="language-link active">EN</a>
+      </li>
+    </ul>
+    <div hidden="" class="neopraxis-show-in-movil">
+      <a class="neopraxis-center-flex" href="./">
+        <img src="./img/logo-aguaviento@3x.png" class="neopraxis-logo-comparative">
+      </a>
+    </div>
+</nav>
