@@ -27,11 +27,20 @@
   </head>
   <body id="body">
     <div id="page" class="remodal-bg">
-      {% include 'partials/navbar.njk' %}
+      {% if section === "company-en" or section === "contact-en" or section === "index-en" or section === "innovation-en" or section === "plant-en" or section === "plant-en"%}
+        {% include 'partials/navbar-en.njk' %}
+      {% else %}
+        {% include 'partials/navbar.njk' %}
+      {% endif %}
+
       <main>
         {% block content %}{% endblock %}
       </main>
-      {% include 'partials/footer.njk' %}
+      {% if section === "company-en" or section === "contact-en" or section === "index-en" or section === "innovation-en" or section === "plant-en" or section === "plant-en"%}
+        {% include 'partials/footer-en.njk' %}
+      {% else %}
+        {% include 'partials/footer.njk' %}
+      {% endif %}
     </div>
     {% block js_libs_config %}
     {% endblock %}
