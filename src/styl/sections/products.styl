@@ -17,6 +17,7 @@
     height 57px
     background-size cover
     content none
+    cursor pointer
   .slick-prev
     z-index 1
     background-image url('../img/products-left-arrow.png')
@@ -30,8 +31,10 @@
     position relative
     margin-left auto
     margin-right auto
-    width 50px
+    width auto
     top -60px
+    li.slick-active button::before, li button::before
+      content ''
     :last-child
       margin-right 0
     li
@@ -42,7 +45,7 @@
       margin-right 10px
       :hover
         background #fff
-      
+
       button
         width 10px
         background #b2e1f7
@@ -84,14 +87,14 @@
 .products-divider-container
   width 516px
   margin 0 auto
-.products-categories
+.products-categories-en
+  width 835px
   margin 85px auto 85px auto
-  width 635px
   .products-category
     display inline-block
     text-align center
     margin-right 30px
-    img 
+    img
       margin-bottom 35px
     p
       display block
@@ -99,6 +102,7 @@
       font-size 15px
       margin 0
       padding 10px 0
+      border-bottom 1px solid transparent
     &.detergents
       img
         width 72px
@@ -115,8 +119,44 @@
       img
         width 72px
         height 60px
-      p
-        border-bottom 1px solid #0d74b9
+    &.industrial
+      img
+        width 72px
+        height 51px
+  :last-child
+    margin-right 0
+.products-categories
+  margin 85px auto 85px auto
+  width 635px
+  .products-category
+    display inline-block
+    text-align center
+    margin-right 30px
+    img
+      margin-bottom 35px
+    p
+      display block
+      color #0c6db8
+      font-size 15px
+      margin 0
+      padding 10px 0
+      border-bottom 1px solid transparent
+    &.detergents
+      img
+        width 72px
+        height 66px
+    &.softeners
+      img
+        width 72px
+        height 61px
+    &.cleaners
+      img
+        width 72px
+        height 60px
+    &.green-tech
+      img
+        width 72px
+        height 60px
     &.industrial
       img
         width 72px
@@ -149,13 +189,17 @@
       &.active
         background #1f7db9
         cursor default
+        &:hover
+          background #1f7db9
+      &:hover
+        background #86bed6
     :last-child
       margin-right 0
 
 .products-features-container
-  width 700px
+  width 704px
   margin 100px auto 150px auto
-  
+
   .hidden
     display none
 
@@ -177,6 +221,7 @@
         border-radius 50%
         width 27px
         height 27px
+        cursor pointer
         &.prev-button
           background url('../img/icons/group-3-copy-4@3x.png')
           background-size cover
@@ -227,14 +272,15 @@
             color #585858
             font-size 13px
             padding-right 3px
+            height 18px
   .product-line-divider
-    height 1px 
+    height 1px
     margin 0 auto
     width 585px
     background #dedede
 
 .product-line-divider
-  height 1px 
+  height 1px
   background #dedede
 
 .maquila
@@ -247,7 +293,7 @@
     flex-wrap wrap
     align-items center
     justify-content center
-    
+
     .brand
       display inline-block
       /*change margins when you add new brands*/
@@ -295,7 +341,79 @@
       color #fff
       letter-spacing 1px
       cursor pointer
+      &:hover
+        background #0965a3
 .products-final-divider
   height 1px
   background #e0e0e0
   margin-bottom 31px
+
+@media only screen and (max-width 414px)
+  .slider-title
+    img
+      left 0 !important
+    .slide-title
+      left 30px !important
+  .aguaviento-content.products
+    width 300px
+  .aguaviento-section-title.products
+    img
+      right 55px
+  .products-divider-container
+    width 260px
+  .products-categories-en
+    width 300px
+    .products-category
+      display block
+      margin-bottom 60px
+      margin-right 0
+      img
+        margin-bottom 20px
+    .green-tech
+      p
+        width 130px
+        margin 0 auto
+  .products-categories
+    width 300px
+    .products-category
+      display block
+      margin-bottom 60px
+      margin-right 0
+      img
+        margin-bottom 20px
+    .green-tech
+      p
+        width 130px
+        margin 0 auto
+  .features-sections
+    width 300px !important
+    :last-child
+      margin-bottom 0
+  .features-section
+    display block !important
+    margin-right 0px !important
+    text-align center
+    margin-bottom 30px
+  .products-features-container
+    width 320px
+    .our-brands
+      .product-line
+        .product-line-title
+          width 320px
+        .product-line-carroussel
+          width 225px
+          .product-line-product .product-image-container
+            width 225px
+      .product-line-divider
+        width 225px
+    .maquila
+      .brands
+        width 225px
+        :last-child
+          margin-bottom 0
+        .brand
+          margin-bottom 50px
+          img
+            margin 0
+    .meet-us
+      margin-top 200px

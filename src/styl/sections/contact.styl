@@ -9,7 +9,7 @@
     .aguaviento-section-title
       &.contact
         img
-          right 220px
+          right 210px
     .aguaviento-contact
       display flex
       margin 92px 0 77px 0
@@ -69,6 +69,7 @@
             border 1px solid #d4d4d4
             font-size 11px
             letter-spacing .4px
+            background-color #fff
             &::placeholder
               color #c1c1c1
               letter-spacing .4px
@@ -84,6 +85,8 @@
             background-color #0d74b9
             font-size 9px;
             color #fff
+            &:hover
+              background #0965a3
       
   	.aguaviento-location
       margin 45px 0 101px 0
@@ -103,3 +106,32 @@
     position absolute
     top 80px
     left 3px
+    width 129px
+    height 159px
+
+@media only screen and (max-width 414px)
+  .aguaviento-container .aguaviento-content.contact
+    width 300px
+    .aguaviento-section-title.contact
+      
+      img
+        right 65px
+    .aguaviento-contact
+      flex-direction column
+      margin-top 40px
+      .contact-row-1
+        margin-bottom 45px
+    #contact-map
+      width 300px
+      height 168px
+  .contact-oval
+    display none
+    
+  .contact-button
+    justify-content center !important
+    margin-top 30px !important
+    button
+      width 100px !important
+      height 38px !important
+      font-size 14px !important
+    
