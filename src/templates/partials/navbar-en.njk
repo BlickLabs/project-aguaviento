@@ -53,13 +53,37 @@
   </ul>
     <ul class="nav navbar-nav navbar-right" id="neopraxis-main-navbar-right">
       <li class="navbar-padding aguaviento-font-montserrat-light right-item-nav">
+        {% if section == 'index-en' %}
         <a href="./index.html" class="language-link">ES</a>
+        {% elif section == 'company-en' %}
+        <a href="./company.html" class="language-link">ES</a>
+        {% elif section == 'products-en' %}
+        <a href="./products.html" class="language-link">ES</a>
+        {% elif section == 'innovation-en' %}
+        <a href="./innovation.html" class="language-link">ES</a>
+        {% elif section == 'plant-en' %}
+        <a href="./plant.html" class="language-link">ES</a>
+        {% elif section == 'contact-en' %}
+        <a href="./contact.html" class="language-link">ES</a>
+        {% endif %}
       </li>
       <li class="navbar-padding aguaviento-font-montserrat-light right-item-nav">
         <a href="#" class="language-link">/</a>
       </li>
       <li class="navbar-padding aguaviento-font-montserrat-light right-item-nav">
+        {% if section == 'index-en' %}
         <a href="./index-en.html" class="language-link active">EN</a>
+        {% elif section == 'company-en' %}
+        <a href="./company-en.html" class="language-link active">EN</a>
+        {% elif section == 'products-en' %}
+        <a href="./products-en.html" class="language-link active">EN</a>
+        {% elif section == 'innovation-en' %}
+        <a href="./innovation-en.html" class="language-link active">EN</a>
+        {% elif section == 'plant-en' %}
+        <a href="./plant-en.html" class="language-link active">EN</a>
+        {% elif section == 'contact-en' %}
+        <a href="./contact-en.html" class="language-link active">EN</a>
+        {% endif %}
       </li>
     </ul>
     <div hidden="" class="neopraxis-show-in-movil">
