@@ -487,7 +487,7 @@
   padding 0
   border transparent
   width 80%
-  max-width 376px
+  max-width 500px
   position relative
 .last-section-feature-button-box
   width 135px
@@ -497,18 +497,18 @@
   margin auto
   margin-top 30px
 .servicesOne
-  width 378px
+  width 500px
   
   .modal-service-image.one
-    width 376px
+    width 500px
     height 300px
     background url("../img/desarrollo/desarrollo-1.jpg")
     background-attachment scroll
     background-repeat no-repeat
-    background-size contain
+    background-size cover
     background-position center center
   .modal-service-image.two
-    width 376px
+    width 500px
     height 300px
     background url("../img/desarrollo/desarrollo-2.jpg")
     background-attachment scroll
@@ -516,7 +516,7 @@
     background-size cover
     background-position center center
   .modal-service-image.three
-    width 376px
+    width 500px
     height 300px
     background url("../img/desarrollo/desarrollo-3.jpg")
     background-attachment scroll
@@ -524,7 +524,7 @@
     background-size cover
     background-position center center
   .modal-service-image.four
-    width 376px
+    width 500px
     height 300px
     background url("../img/desarrollo/desarrollo-4.jpg")
     background-attachment scroll
@@ -532,7 +532,7 @@
     background-size cover
     background-position center center
   .modal-service-image.five
-    width 376px
+    width 500px
     height 300px
     background url("../img/desarrollo/desarrollo-5.jpg")
     background-attachment scroll
@@ -540,20 +540,20 @@
     background-size cover
     background-position center center
   .modal-service-image.six
-    width 376px
+    width 500px
     height 300px
     background url("../img/desarrollo/desarrollo-6.jpg")
     background-attachment scroll
     background-repeat no-repeat
-    background-size contain
+    background-size cover
     background-position center center
     
 
 .servicesTwo
-  width 378px
+  width 500px
   
   .modal-service-image.one
-    width 376px
+    width 500px
     height 300px
     background url("../img/maquila/maquila-1.jpg")
     background-attachment scroll
@@ -561,15 +561,15 @@
     background-size cover
     background-position center center
   .modal-service-image.two
-    width 376px
+    width 500px
     height 300px
     background url("../img/maquila/maquila-2.jpg")
     background-attachment scroll
     background-repeat no-repeat
-    background-size contain
+    background-size cover
     background-position center center
   .modal-service-image.three
-    width 376px
+    width 500px
     height 300px
     background url("../img/maquila/maquila-3.jpg")
     background-attachment scroll
@@ -577,7 +577,7 @@
     background-size cover
     background-position center center
   .modal-service-image.four
-    width 376px
+    width 500px
     height 300px
     background url("../img/maquila/maquila-4.jpg")
     background-attachment scroll
@@ -585,7 +585,7 @@
     background-size cover
     background-position center center
   .modal-service-image.five
-    width 376px
+    width 500px
     height 300px
     background url("../img/maquila/maquila-5.jpg")
     background-attachment scroll
@@ -593,7 +593,7 @@
     background-size cover
     background-position center center
   .modal-service-image.six
-    width 376px
+    width 500px
     height 300px
     background url("../img/maquila/maquila-6.jpg")
     background-attachment scroll
@@ -601,7 +601,7 @@
     background-size cover
     background-position center center
   .modal-service-image.seven
-    width 376px
+    width 500px
     height 300px
     background url("../img/maquila/maquila-7.jpg")
     background-attachment scroll
@@ -609,7 +609,7 @@
     background-size cover
     background-position center center
   .modal-service-image.eight
-    width 376px
+    width 500px
     height 300px
     background url("../img/maquila/maquila-8.jpg")
     background-attachment scroll
@@ -617,7 +617,7 @@
     background-size cover
     background-position center center
   .modal-service-image.nine
-    width 376px
+    width 500px
     height 300px
     background url("../img/maquila/maquila-9.jpg")
     background-attachment scroll
@@ -625,7 +625,7 @@
     background-size cover
     background-position center center
   .modal-service-image.ten
-    width 376px
+    width 500px
     height 300px
     background url("../img/maquila/maquila-10.jpg")
     background-attachment scroll
@@ -707,3 +707,17 @@
   opacity 0.25
   color #ffffff
   -webkit-font-smoothing antialiased
+  
+@media only screen and (max-width 414px)
+  .slick-track
+    display flex !important
+    align-items center !important
+  
+  .servicesOne .modal-service-image
+    &.one, &.two, &.three, &.four, &.five, &.six
+      height 150px
+  
+  .servicesTwo .modal-service-image
+    &.one, &.two, &.three, &.four, &.five, &.six, &.seve,
+    &.eight, &.nine, &.ten
+      height 150px
