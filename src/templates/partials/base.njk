@@ -27,7 +27,7 @@
   </head>
   <body id="body">
     <div id="page" class="remodal-bg">
-      {% if section === "company-en" or section === "contact-en" or section === "index-en" or section === "innovation-en" or section === "plant-en" or section === "products-en"%}
+      {% if section === "company-en" or section === "contact-en" or section === "index-en" or section === "innovation-en" or section === "plant-en" or section === "products-en"  or section === "notice-privacy"%}
         {% include 'partials/navbar-en.njk' %}
       {% else %}
         {% include 'partials/navbar.njk' %}
@@ -36,7 +36,7 @@
       <main>
         {% block content %}{% endblock %}
       </main>
-      {% if section === "company-en" or section === "contact-en" or section === "index-en" or section === "innovation-en" or section === "plant-en" or section === "products-en"%}
+      {% if section === "company-en" or section === "contact-en" or section === "index-en" or section === "innovation-en" or section === "plant-en" or section === "products-en"  or section === "notice-privacy"%}
         {% include 'partials/footer-en.njk' %}
       {% else %}
         {% include 'partials/footer.njk' %}
